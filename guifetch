@@ -1,0 +1,4 @@
+#!/bin/bash
+text=`screenfetch -nN`
+text=$(echo -e "${text}" | sed -e 's/^[[:space:]]*//')
+zenity --info --title="GUIFetch" --height=300 --icon-name=start-here --text="$text"
